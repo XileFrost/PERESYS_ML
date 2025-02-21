@@ -1,0 +1,41 @@
+Instrucciones para ejecutar la aplicaci¢n Streamlit:
+1. Requisitos previos:
+Aseg£rate de tener instaladas las siguientes librer¡as:
+* streamlit: Para la creaci¢n de la aplicaci¢n web.
+* tensorflow: Para cargar y ejecutar el modelo de recomendaci¢n entrenado.
+* sklearn: Para las funciones de preprocesamiento y similitud.
+* pandas y numpy: Para la manipulaci¢n de datos.
+Puedes instalar las dependencias utilizando pip:
+pip install streamlit tensorflow scikit-learn pandas numpy
+
+2. Archivos requeridos:
+Aseg£rate de tener los siguientes archivos en las rutas especificadas:
+* Modelo entrenado: modelo5NCF.keras
+* Metadatos de las pel¡culas: movies_metadata.pkl
+* Diccionario de t¡tulo a c¢digo: title_to_code.pkl
+* Codificador de usuarios: user_encoder.pkl
+* Matriz de usuarios y pel¡culas: user_movie_matrix.pkl
+Si los archivos no est n en estas ubicaciones, deber s modificar las rutas dentro del c¢digo.
+
+3. Estructura del proyecto:
+Aseg£rate de tener la siguiente estructura de directorios:
+ÃÄÄ src/
+³   ÃÄÄ movies_metadata.pkl
+³   ÃÄÄ title_to_code.pkl
+³   ÃÄÄ user_encoder.joblibl
+³   ÀÄÄ user_movie_matrix.h5
+ÃÄÄ models/
+³   ÀÄÄ modelo5NCF.keras
+ÀÄÄ app.py  # Este es el archivo principal de la app
+
+
+
+
+4. Ejecutar la aplicaci¢n:
+Una vez que hayas asegurado que todos los archivos y dependencias est n en su lugar, navega al directorio que contiene tu archivo app.py (el c¢digo que proporcionaste) y ejecuta el siguiente comando en tu terminal:
+streamlit run app.py
+Esto abrir  una nueva ventana de tu navegador donde podr s interactuar con la aplicaci¢n.
+
+5. Interfaz de usuario:
+La aplicaci¢n te permitir  valorar algunas pel¡culas en una escala del 1 al 5. Tras valorar las pel¡culas, podr s hacer clic en el bot¢n "?? Generar Recomendaciones" y recibir s recomendaciones cinematogr ficas basadas en usuarios con gustos similares a los tuyos.
+
